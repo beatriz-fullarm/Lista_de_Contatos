@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adicionar</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Beatriz">
+    <meta name="description" content="Lista de contatos com nome e email." />
+    <meta name="keywords" content="Lista, Contatos, Lista de Contatos" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="add-contato.css">
+</head>
+
+<body>
+    <main>
+        <form action="adicionar.php" method="POST">
+            <legend>Adicionar contato</legend>
+
+            <input type="hidden" name='id'>
+            
+            <label for="nome" class="labels">Digite o nome:</label>
+            <input type="text" name="nome" class="dados" placeholder="Digite o nome">
+
+            <label for="email" class="labels">Digite o email:</label>
+            <input type="email" name="email" class="dados" placeholder="email@exemplo.com">
+
+            <button type="submit" id="adicionar">Adicionar Contato</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
